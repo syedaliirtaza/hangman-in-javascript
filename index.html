@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body style="background-color: black;">
+
+    <div class="container">
+        <!-- game heading -->
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-5">
+                <h1 style="color: white;">HangMan Game</h1>
+            </div>
+        </div>
+        <!-- lives  -->
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center mt-3">
+                <h6 style="color: white;">You have <span>10</span> lives left</h6>
+            </div>
+        </div>
+        <!-- alphabets -->
+            <div class="row">
+                <div class="col-12 mt-4 alphabetsButton ">
+                    <button value="a">a</button>
+                    <button value="b">b</button>
+                    <button value="c">c</button>
+                    <button value="d">d</button>
+                    <button value="e">e</button>
+                    <button value="f">f</button>
+                    <button value="g">g</button>
+                    <button value="h">h</button>
+                    <button value="i">i</button>
+                    <button value="j">j</button>
+                    <button value="k">k</button>
+                    <button value="l">l</button>
+                    <button value="m">m</button>
+                    <button value="n">n</button>
+                    <button value="o">o</button>
+                    <button value="p">p</button>
+                    <button value="q">q</button>
+                    <button value="r">r</button>
+                    <button value="s">s</button>
+                    <button value="t">t</button>
+                    <button value="u">u</button>
+                    <button value="v">v</button>
+                    <button value="w">w</button>
+                    <button value="x">x</button>
+                    <button value="y">y</button>
+                    <button value="z">z</button>
+                </div>
+            </div>
+            <!-- catagory choosing -->
+            <div class="row">
+                <div class="col-12 mt-5 d-flex justify-content-center catagoryTopic">
+                    <h2 style="color: white;">Catagory that you choose is <h2 id="catagory" style="color: teal;">this</h2></h2>
+                </div>
+            </div>
+            <!-- fill in the blanks -->
+            <div class="row">
+                <div class="col-12 mt-3 d-flex justify-content-center">
+                    <h1 style="color: tomato;">this is answer</h1>
+                </div>
+            </div>
+            <!-- clue  -->
+            <div class="row">
+                <div class="col-12 mt-3 d-flex justify-content-center">
+                    <h3 style="color: thistle;">Clue:-<p id="clue"></p></h3>
+                </div>
+            </div>
+            <!-- hangman -->
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <canvas id="hangman"></canvas>
+                </div>
+            </div>
+            
+            <!-- hint and play again button -->
+            <div class="row">
+                <div class="col-12 mt-4 d-flex justify-content-center">
+                    <button style="position: relative; right: 15px;" class="btn btn-success">Hint</button>
+                    <button class="btn btn-primary">Play Again</button>
+                </div>
+            </div>
+    </div>
+
+   
+    <!-- js scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
