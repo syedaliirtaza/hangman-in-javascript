@@ -21,50 +21,51 @@
         <!-- lives  -->
         <div class="row">
             <div class="col-12 d-flex justify-content-center mt-3">
-                <h6 style="color: white;">You have <span>10</span> lives left</h6>
+                <h6 style="color: white;">You have <span id="lives"></span> lives left</h6>
             </div>
         </div>
         <!-- alphabets -->
             <div class="row">
                 <div class="col-12 mt-4 alphabetsButton ">
-                    <button value="a">a</button>
-                    <button value="b">b</button>
-                    <button value="c">c</button>
-                    <button value="d">d</button>
-                    <button value="e">e</button>
-                    <button value="f">f</button>
-                    <button value="g">g</button>
-                    <button value="h">h</button>
-                    <button value="i">i</button>
-                    <button value="j">j</button>
-                    <button value="k">k</button>
-                    <button value="l">l</button>
-                    <button value="m">m</button>
-                    <button value="n">n</button>
-                    <button value="o">o</button>
-                    <button value="p">p</button>
-                    <button value="q">q</button>
-                    <button value="r">r</button>
-                    <button value="s">s</button>
-                    <button value="t">t</button>
-                    <button value="u">u</button>
-                    <button value="v">v</button>
-                    <button value="w">w</button>
-                    <button value="x">x</button>
-                    <button value="y">y</button>
-                    <button value="z">z</button>
+                    <button value="a" onclick="display('a')">a</button>
+                    <button value="b" onclick="display('b')">b</button>
+                    <button value="c" onclick="display('c')">c</button>
+                    <button value="d" onclick="display('d')">d</button>
+                    <button value="e" onclick="display('e')">e</button>
+                    <button value="f" onclick="display('f')">f</button>
+                    <button value="g" onclick="display('g')">g</button>
+                    <button value="h" onclick="display('h')">h</button>
+                    <button value="i" onclick="display('i')">i</button>
+                    <button value="j" onclick="display('j')">j</button>
+                    <button value="k" onclick="display('k')">k</button>
+                    <button value="l" onclick="display('l')">l</button>
+                    <button value="m" onclick="display('m')">m</button>
+                    <button value="n" onclick="display('n')">n</button>
+                    <button value="o" onclick="display('o')">o</button>
+                    <button value="p" onclick="display('p')">p</button>
+                    <button value="q" onclick="display('q')">q</button>
+                    <button value="r" onclick="display('r')">r</button>
+                    <button value="s" onclick="display('s')">s</button>
+                    <button value="t" onclick="display('t')">t</button>
+                    <button value="u" onclick="display('u')">u</button>
+                    <button value="v" onclick="display('v')">v</button>
+                    <button value="w" onclick="display('w')">w</button>
+                    <button value="x" onclick="display('x')">x</button>
+                    <button value="y" onclick="display('y')">y</button>
+                    <button value="z" onclick="display('z')">z</button>
                 </div>
             </div>
             <!-- catagory choosing -->
             <div class="row">
                 <div class="col-12 mt-5 d-flex justify-content-center catagoryTopic">
-                    <h2 style="color: white;">Catagory that you choose is <h2 id="catagory" style="color: teal;">this</h2></h2>
+                    <h2 style="color: white;">Catagory that you choose is <h2 id="catagory" style="color: teal;"></h2></h2>
                 </div>
             </div>
             <!-- fill in the blanks -->
             <div class="row">
                 <div class="col-12 mt-3 d-flex justify-content-center">
-                    <h1 style="color: tomato;">this is answer</h1>
+                    <!-- <h1 style="color: tomato;" id="guess"></h1> -->
+                    <h4 style="color: white;">Your Answer:- </h4><input type="text" style="color: tomato;" id="guess">
                 </div>
             </div>
             <!-- clue  -->
@@ -83,8 +84,8 @@
             <!-- hint and play again button -->
             <div class="row">
                 <div class="col-12 mt-4 d-flex justify-content-center">
-                    <button style="position: relative; right: 15px;" class="btn btn-success">Hint</button>
-                    <button class="btn btn-primary">Play Again</button>
+                    <button onclick="hinting()" style="position: relative; right: 15px;" class="btn btn-success">Hint</button>
+                    <button onclick="evaluating()" class="btn btn-primary">Check Answer</button>
                 </div>
             </div>
     </div>

@@ -21,3 +21,10 @@ canvas{
     position: relative;
     left: 10px;
 }
+input{
+    border: none;
+    background: transparent;
+    font-weight: 800;
+    position: relative;
+    right: -20px;
+}
